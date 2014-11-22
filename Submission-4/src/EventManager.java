@@ -1,9 +1,12 @@
+package spree;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+
 
 
 public class EventManager {
@@ -13,9 +16,9 @@ public class EventManager {
 	String ID;
 	String LoginStatus;
 
-	public EventManager(String event, String name, String ID){
+	public EventManager(String event, String name){
 		this.Event = event;
-		this.ID = ID;
+		
 		this.Name = name;
 	}
 	
@@ -26,7 +29,7 @@ public class EventManager {
 		int i=0;
 		String sCurrentLine;
 		
-		BufferedReader br = new BufferedReader(new FileReader("E:\\workspace\\event manager\\bin\\login.txt"));
+		BufferedReader br = new BufferedReader(new FileReader("login.txt"));
 		
 		while ((sCurrentLine = br.readLine()) != null) {
 
@@ -49,7 +52,7 @@ public class EventManager {
 		
 	}
 	
-	private void deletePlayer(String name)
+ public 	void deleteTeam(String name)
         {
 	if (this.LoginStatus.equals("Logged in"))
             {

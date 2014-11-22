@@ -72,7 +72,7 @@ public String[] get_list_of_teams(){
 			
 		}
 			 
-			 //System.out.println("Enter 1 for knock out type schedule or 2 for pool type schedule");
+			 System.out.println("Enter 1 for knock out type schedule or 2 for pool type schedule");
 			 
 			 int b = in.nextInt();
 			 
