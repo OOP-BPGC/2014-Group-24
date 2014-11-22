@@ -5,7 +5,7 @@ import java.util.Scanner;
 import spree.Player;
 
 public class Team 
-{	Player[] players;
+{
 	int no_of_players;
 	String eventname;
 	int seeding;
@@ -31,7 +31,7 @@ public class Team
                 this.set_event_name(sc.nextLine());
                 System.out.println("Enter your team name");
                 this.set_team_name(sc.nextLine());
-                System.out.println("Enter the number of players in your team: ");
+                System.out.println("Enter the nuber of players in your team: ");
                 this.set_no_of_players(sc.nextInt());
                 this.set_college_name(player.get_college());
                 //BY DEFAULT, SEEDING IS ZERO FOR ALL
